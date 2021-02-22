@@ -1,0 +1,58 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 1,
+    "C_Cpp.updateChannel": "Insiders",
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": false,
+    "files.autoSave": "afterDelay",
+    "zenMode.centerLayout": false,
+    /*
+        search 
+    */
+    "search.exclude": {
+        "**/.bundle.js": true,
+        "**/.git": true
+    },
+    "search.showLineNumbers": true,
+    "search.loacation":"panel",
+    "search.actionsPosition": "bottom",
+    "files.autoSaveDelay": 100,
+    "editor.renderWhitespace": "none",
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    /*
+        Key
+    */
+    "keyboard.dispatch": "keyCode",
+    "editor.lineNumbers": "on",
+    /*
+         vim(need Vim extension)
+    */
+    "vim.ignorecase":true,
+    "vim.hlsearch":true,
+    "vim.useSystemClipboard": true, // 与系统剪切板共享
+
+    "vim.leader":" ",
+    // Visual Mode
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>","o", "r"],
+        "commands": ["workbench.action.openRecent"]
+       }
+    ],
+    // normal Mode
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {//打开最近的文件
+        "before": ["<leader>","o", "r"],
+        "commands": ["workbench.action.openRecent"],
+       },
+       {//打开文件
+        "before": ["<leader>","x", "f"], //emacs C-x C-f
+        "commands": ["workbench.action.files.openFile"]
+       },
+       {//Save
+         "before": ["<leader>","x", "s"], //emacs C-x C-s
+         "commands": ["workbench.action.files.save"]
+       }
+    ]
+}
